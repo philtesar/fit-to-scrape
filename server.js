@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
-mongoose.connect('mongodb://heroku_m66f5j3p:Redskins217@ds115446.mlab.com:15446/heroku_m66f5j3p');
+mongoose.connect('mongodb://heroku_rmgfzthh:p906j96am155uph46hjkrvlaqk@ds045785.mlab.com:45785/heroku_rmgfzthh');
 var db = mongoose.connection;
 
 // Routes
