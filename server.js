@@ -21,11 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
-mongoose.Promise = Promise;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/homework10"
-var promise = mongoose.connect(MONGODB_URI, {
-  useMongoClient: true
-});
+mongoose.connect('mongodb://heroku_rmgfzthh:p906j96am155uph46hjkrvlaqk@ds045785.mlab.com:45785/heroku_rmgfzthh');
+var db = mongoose.connection;
+};
 // Routes
 // A GET route for scraping the echojs website
 app.get("/scrape", function(req, res) {
