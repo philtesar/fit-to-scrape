@@ -23,7 +23,7 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 mongoose.connect('mongodb://heroku_rmgfzthh:p906j96am155uph46hjkrvlaqk@ds045785.mlab.com:45785/heroku_rmgfzthh');
 var db = mongoose.connection;
-};
+
 // Routes
 // A GET route for scraping the echojs website
 app.get("/scrape", function(req, res) {
