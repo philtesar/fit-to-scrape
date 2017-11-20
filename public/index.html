@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New York Times News Scraper</title>
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <style>
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .jumbotron {
+        width: 100%;
+        height: 250px;
+    }
+
+    .jumboText h1 {
+        padding-right: 50px;
+        text-align: center;
+        font-family: 'Vollkorn SC', serif;
+        align-content: center;
+    }
+
+    .panel-heading {
+        font-family: 'Vollkorn SC', serif;
+        font-size: 40px;
+    }
+
+    .panel-body {
+        font-family: 'Vollkorn SC', serif;
+        font-size: 15px;
+    }
+
+    </style>
+</head>
+<header>
+    
+</header>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="jumboText">
+                <h1>New York Times Scraper</h1>
+                <center><button type="button" class="scrapeBtn btn-primary" id="scrape">Scrape Articles</center></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>News Articles</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div id="articles"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>Notes</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div id="notes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
